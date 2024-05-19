@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        Toast.makeText(this,"Main Activity",Toast.LENGTH_LONG).show()
+
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.Clientid)).requestEmail().build()
 
